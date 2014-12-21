@@ -117,6 +117,7 @@ ifneq ($(findstring v,$(GIT_TAG)), v)
 endif
 
 BLINK1_VERSION="$(GIT_TAG)-$(OS)-$(MACH_TYPE)"
+BLINK1_VERSION=daanzu
 
 
 
@@ -190,6 +191,8 @@ EXELOCATION ?= $(SystemRoot)/system32
 LIBLOCATION ?= $(SystemRoot)/system32
 # not sure where this really should point
 INCLOCATION ?= $(SystemRoot)/system32
+
+CC = gcc
 
 endif
 
